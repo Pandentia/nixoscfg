@@ -2,6 +2,11 @@
 
 { config, pkgs, ... }:
 {
+    # Import user configuration
+    imports = [
+        ./users.nix
+    ];
+
     # Enable SSH
     services.openssh.enable = true;
     services.openssh.passwordAuthentication = false;
