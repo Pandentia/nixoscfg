@@ -6,7 +6,7 @@
     users.users.pandentia = {
         isNormalUser = true;
         description = "Cassandra";
-        extraGroups = [ "wheel" ];
+        extraGroups = [ "wheel" "docker" "syncthing" ];
         shell = pkgs.fish;
     };
     programs.fish.enable = true;
