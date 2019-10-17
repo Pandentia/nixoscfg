@@ -2,14 +2,11 @@
 
 { config, pkgs, ... }:
 {
-    # Import user configuration
+    # Import relevant configs
     imports = [
-        ./users.nix
+        ./users
+        ./roles/sshd.nix
     ];
-
-    # Enable SSH
-    services.openssh.enable = true;
-    services.openssh.passwordAuthentication = false;
 
     # Set leap-smearing time servers
     networking.timeServers = [ "time.google.com" ];
