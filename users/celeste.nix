@@ -6,6 +6,6 @@
     users.users.celeste = {
         isNormalUser = true;
         description = "Celeste";
-        extraGroups = [ "wheel" "networkmanager" "docker" "syncthing" ];
+        extraGroups = [ "wheel" "networkmanager" "docker" "vboxusers" "syncthing" ];
     };
 }
