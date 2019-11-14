@@ -14,6 +14,9 @@
     # Defeat lid switches on laptops
     services.logind.lidSwitch = "ignore";
 
+    # Clean /tmp
+    boot.cleanTmpDir = true;
+
     # Enable fstrim
     services.fstrim.enable = true;
 
