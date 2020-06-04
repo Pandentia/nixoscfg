@@ -21,7 +21,7 @@
     services.fstrim.enable = true;
 
     # Enable automatic upgrades
-    system.autoUpgrade.enable = true;
+    # system.autoUpgrade.enable = true;
 
     # Enable automatic garbage collection after 14 days
     nix.gc.automatic = true;
