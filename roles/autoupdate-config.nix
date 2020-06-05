@@ -11,7 +11,7 @@
     };
     systemd.timers.autoupdate-config = {
         description = "Download external NixOS configs hourly";
-        wantedBy = "timers.target";
+        wantedBy = [ "timers.target" ];
         timerConfig = {
             OnBootSec = "15m";
             OnUnitActiveSec = "1h";
