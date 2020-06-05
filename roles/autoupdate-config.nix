@@ -9,7 +9,7 @@
         serviceConfig.WorkingDirectory = "/etc/nixos/cfg";
         serviceConfig.Type = "oneshot";
     };
-    systemd.services.timers.autoupdate-config = {
+    systemd.timers.autoupdate-config = {
         description = "Download external NixOS configs hourly";
         wantedBy = "timers.target";
         timerConfig = {
