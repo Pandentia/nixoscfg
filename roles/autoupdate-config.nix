@@ -2,8 +2,8 @@
 {
     systemd.services.autoupdate-config = {
         description = "Update external NixOS configs";
-        after = "network-online.target";
-        wants = "network-online.target";
+        after = [ "network-online.target" ];
+        wants = [ "network-online.target" ];
         path = [ pkgs.gitMinimal ];
         script = "git reset --hard && git pull";
         serviceConfig.WorkingDirectory = "/etc/nixos/cfg";
