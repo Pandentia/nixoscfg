@@ -12,7 +12,7 @@
             "docker" "vboxusers" "libvirtd"
             "syncthing"
         ];
-        shell = pkgs.fish;
+        shell = pkgs.xonsh;
     };
-    programs.fish.enable = true;
+    programs.xonsh.enable = true;
 }
