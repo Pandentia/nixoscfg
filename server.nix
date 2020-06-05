@@ -6,6 +6,7 @@
     imports = [
         ./users
         ./roles/sshd.nix
+        ./roles/autoupdate-config.nix
     ];
 
     # Set leap-smearing time servers
