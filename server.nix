@@ -21,6 +21,9 @@
     # Enable fstrim
     services.fstrim.enable = true;
 
+    # Enable network monitoring
+    services.vnstat.enable = true;
+
     # Enable automatic upgrades
     # system.autoUpgrade.enable = true;
 
