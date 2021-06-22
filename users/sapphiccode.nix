@@ -3,10 +3,10 @@
 { config, pkgs, ... }:
 {
     # Define a user account
-    users.users.pandentia = {
+    users.users.sapphiccode = {
         isNormalUser = true;
         uid = 1000;
-        group = "pandentia";
+        group = "sapphiccode";
         description = "Cassandra";
         extraGroups = [
             "wheel" "dialout" "scanner"
@@ -14,8 +14,8 @@
             "docker" "vboxusers" "libvirtd"
             "syncthing"
         ];
-        shell = pkgs.xonsh;
+        shell = pkgs.fish;
     };
-    users.groups.pandentia.gid = 1000;
-    programs.xonsh.enable = true;
+    users.groups.sapphiccode.gid = 1000;
+    programs.fish.enable = true;
 }
